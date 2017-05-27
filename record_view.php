@@ -35,8 +35,14 @@ if(mysqli_num_rows($result) > 0)
         $pageID = $Artist;
 //        $Labelsimp = strstr("$Label ", ", ", true);
         $Feedback = '';//no feedback necessary
+        
+        if (empty($row['FrontSide'])) {
+        $Frontside= 'images/frontsidenotfound.gif'; }
+        if (empty($row['BackSide'])) {
+        $Backside= 'images/backsidenotfound.gif'; }
     }    
 
+    
 
     
 }else{//inform there are no records

@@ -1,9 +1,9 @@
 <section class="container">
     <div id="card">
       <?php
- echo '<figure class="front"> <img id="label-pic" src="'. $Frontside .'" /></figure>';
 
-echo '<figure class="back"> <img id="label-pic" src="'. $Backside .'" /></figure>';
+echo '<figure class="front"> <img class="record-pic" src="'. $Frontside .'" /></figure>';
+echo '<figure class="back"> <img class="record-pic" src="'. $Backside .'" /></figure>';
 ?>
 <!--
 <figure class="front"></figure>
@@ -15,6 +15,3 @@ echo '<figure class="back"> <img id="label-pic" src="'. $Backside .'" /></figure
   <section id="options">
     <p><button id="flip">Flip the script.</button></p>
   </section>
-<?php
- echo '<figure id="record-pic" background-image="uploads/' . str_replace(" ", "", strtolower($Label)) . '.jpg" />';
-?>
