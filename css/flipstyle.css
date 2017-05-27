@@ -56,18 +56,20 @@ text-shadow: 2px 2px 2px #0f0;
     }
 
     #card .front {
+/*
       background-image: url(http://ridethegrid.net/web120/fp/images/beastieboysbook.jpg);
       background-size: 800px auto;
+*/
       background-repeat: no-repeat;
     }
 
     #card .back {
-      background-image: url(http://ridethegrid.net/web120/fp/images/beastieboysbackbook.jpg);
+/*      background-image: url(http://ridethegrid.net/web120/fp/images/beastieboysbackbook.jpg);*/
       -webkit-transform: rotateY( 180deg );
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
               transform: rotateY( 180deg );
-        background-size: 800px auto;
+/*        background-size: 800px auto;*/
         background-repeat: no-repeat;
         left: -10%;
     }

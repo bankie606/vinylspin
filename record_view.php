@@ -29,6 +29,8 @@ if(mysqli_num_rows($result) > 0)
         $Artist = stripslashes($row['Artist']);
         $Title = stripslashes($row['Title']);
         $Label = stripslashes($row['Label']);
+        $Frontside=($row['FrontSide']);
+        $Backside=($row['BackSide']);
         $title = "Title Page for " . $Title;
         $pageID = $Artist;
 //        $Labelsimp = strstr("$Label ", ", ", true);
@@ -55,7 +57,6 @@ if($Feedback == '')
     echo 'Title: <b>' . $Title . '</b><br> ';
     echo 'Label: <b>' . $Label . '</b><br> ';
     echo '<img id="label-pic" src="uploads/' . str_replace(" ", "", strtolower($Label)) . '.jpg" />';
-//    echo '<figure id="record-pic" background-image="uploads/' . str_replace(" ", "", strtolower($Label)) . '.jpg" />';
     
 include 'recordimage.php';
 }else{//warn user no data
