@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <?php    
+    //dynamic copyright  
+    date_default_timezone_set('America/Los_Angeles');
+$yearofoperation = date("Y");
+    ?>
+    <link rel="stylesheet" type="text/css" title="blue" href="css/style.css"/>
+<link rel="alternate stylesheet" type="text/css" title="pink" href="css/nauticahtml.css">
+    <link rel="alternate stylesheet" type="text/css" title="pink" href="css/nauticalayout.css">
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/bluestyle.css">
+    <link rel="stylesheet" href="css/activestyletoggle.css" />
+    <link rel="stylesheet" href="css/recordstyle.css" />
+    <link rel="stylesheet" href="css/flipstyle.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <script src="js/util.js" ></script>
+        <script src="js/flipcard.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>  
+    <ul id="menu">
+
+    
+<li <?php if ($page == 'template.php') { echo 'class="active"'; } ?>><a href="template.php">Template</a></li>    
+<li <?php if ($page == 'record_list.php.php') { echo 'class="active"'; } ?>><a href="record_list.php">Record Inventory</a></li>
+<li <?php if ($page == 'book.php') { echo 'class="active"'; } ?>><a href="book.php">Book Sample</a></li>    
+<li <?php if ($page == 'contact.php') { echo 'class="active"'; } ?>><a href="contact.php">Contact</a></li>    
+</ul>
+<!-- #page: holds the page content -->
+  <div id="page">
+      <div id="site_content">  
+	
+      <div id="header_image"></div>	  		    
+        
+	  <div id="content">
+        
+		<div class="border_top"></div>
+        <div class="border_bottom"></div>			
+		
+		<div class="content_item">		
+		
+
+    <!-- #columns: holds the columns of the page -->
+    <div id="columns" class="widthPad">
+
+
+    <!-- Single column -->
+    <div class="floatLeft width100">
+
+        
+        
+        <header>
+        <h1><?=$banner?></h1>
+        </header>
+            <section>
+    <!--Header Ends Here -->  
+              
+               <!-- Start Post -->
+      <div class="post">
+
+        <div class="date">
+          <span class="month">Apr</span>
+          <span class="day">8</span>
+        </div>
+
+        <p>
+          <span class="title">Sample Icon Pack Released!</span>
+	      In nunc justo, mollis sed, gravida at, <a href="">aliquam sit amet</a>, urna. Nulla commodo. In pharetra justo eget turpis. Nulla commodo. In pharetra justo eget turpis.
+
+	    </p>
+
+      </div>
+      <!-- End Post -->
+
+<div class="header">
+  <ul class="zebraList">
+<div class="header"><div class="nav"><div class="desc">Showing one plot summary</div></div></div>
+          <li class="odd">
+              <p class="plotSummary">
+Two cops investigating the murder of a young boy become invloved in a very secret project involving alien life. Needless to say, the authorities don't want them to stick their noses into this.              </p>
+                  <span class="nobr">- <em>Written by
+<a href="/search/title?plot_author=Rob%20Hartill&view=simple&sort=alpha&ref_=ttpl_pl_1"
+>Rob Hartill</a></span></em>          </li>
+  </ul>
+    <h4 class="dataHeaderWithBorder">Synopsis</h4>
+    <div id="no_content" class="list"><div class="soda even">
+        It looks like we don't have any Synopsis for this title yet.
+<p>Be the first to contribute!                 Just click the "Edit page" button at the bottom of the page or learn more in the
+<a href="/swiki/special?SynopsisHelp"
+> Synopsis submission guide.
+</a>        </p>
+    </div></div>
+    </div>
+                
+    </div><!--close content-->
+	  
+	</div><!--close site_content--> 
+ 
+  </div><!--close main-->
+        
+        
+ </div>
+    <!-- Single column end -->
+
+
+    </div>
+    <!-- #columns end -->
+ </div> <!-- #page end -->
+
+        </section>
+        <footer id="footer">
+            &copy; 2014-<?=$yearofoperation ?>, All Rights Reserved
+        </footer>
+    </body>
+</html>

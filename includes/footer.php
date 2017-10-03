@@ -2,6 +2,9 @@
 <?=$bottomtext ?>
          </div><!--close content-->
 	  
+<? include 'recordsearch.php'; ?>
+
+
 	</div><!--close site_content--> 
  
   </div><!--close main-->

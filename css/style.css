@@ -1,0 +1,265 @@
+.wrapper {
+  margin-right: auto; 
+  margin-left:  auto; 
+
+  max-width: 960px; 
+
+  padding-right: 10px; 
+  padding-left:  10px; 
+}
+
+
+html
+{ height: 100%;
+}
+
+body
+{ 
+  margin: 0 auto;    
+  font: normal 110% monospace; 
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  background: #000082;
+  width:100%;
+  max-width: 960px;
+  box-shadow: 
+    0 0 0 1px hsl(0, 0%, 50%),
+    0 0 0 2px hsl(0, 0%, 60%),
+    0 0 0 4px hsl(0, 0%, 70%),
+    0 0 0 8px hsl(0, 0%, 80%),
+    0 0 0 20px hsl(0, 0%, 90%);
+}
+
+.post{
+padding: 10px;
+width:100%;    
+max-width: 960px;
+margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5{
+margin: 0 auto;
+width:50%;    
+}
+
+h1{
+font-size: 2em;
+}
+
+ol,ul,li{
+margin: 0 auto;
+width: 50%;
+list-style: armenian;
+}
+
+
+#menu {
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 2%;
+    font-size:115%;
+    text-align: center;
+    display: inline-flex;
+    position: relative;
+    background: #214253;
+    box-shadow: 
+    0 0 0 1px hsl(0, 0%, 50%),
+    0 0 0 2px hsl(0, 0%, 60%),
+    0 0 0 4px hsl(0, 0%, 70%),
+    0 0 0 8px hsl(0, 0%, 80%),
+    0 0 0 16px hsl(0, 0%, 90%);
+    width: 96%;
+}
+
+#menu:hover{
+
+animation-name: example2;
+animation-duration: 2s;
+animation-direction: alternate-reverse;   
+}
+
+#menu li a{
+font-size: 100%;
+display: inline;
+text-decoration: none;
+}
+
+
+br{
+padding:10px;
+}
+
+span{
+margin: 0 auto;
+width: 50%;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        color: aqua;
+        font-size: 100%;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red, yellow); /* Standard syntax */ 
+    }
+    
+    50% {
+    font-size:105%;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 10%, yellow 90%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 10%, yellow 90%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red 10%, yellow 90%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red 10%, yellow 90%); /* Standard syntax */ 
+    }
+    
+    
+     75% {
+    font-size:102%;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 10%, yellow 90%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 20%, green 80%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(blue 20%, green 80%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(blue 20%, green 80%); /* Standard syntax */ 
+    }
+    
+    
+    
+    100% {
+        color: yellow;
+        font-size: 102%;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 40%, yellow 59%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 40%, yellow 59%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red 40%, yellow 59%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red 40%, yellow 59%); /* Standard syntax */ 
+    }
+}
+
+@keyframes example2 {
+    0% {
+        color: aqua;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red, yellow); /* Standard syntax */ 
+    }
+    
+    50% {
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 10%, yellow 90%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 10%, yellow 90%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red 10%, yellow 90%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red 10%, yellow 90%); /* Standard syntax */ 
+    }
+    
+    
+     75% {
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 10%, yellow 90%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 20%, green 80%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(blue 20%, green 80%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(blue 20%, green 80%); /* Standard syntax */ 
+    }
+    
+    
+    
+    100% {
+        color: yellow;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(red 40%, yellow 59%); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(red 40%, yellow 59%); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(red 40%, yellow 59%); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(red 40%, yellow 59%); /* Standard syntax */ 
+    }
+}
+/* The element to apply the animation to */
+
+a{
+color:aqua;
+display: inline-block;
+position: relative;
+}
+
+a:hover{
+color:aqua;
+display: inline-block;
+position: relative;
+text-shadow:1px 1px 3px #3023f9, 2px 2px 3px #fff, 2px 3px 3px #00f;    
+animation-name: example;
+animation-duration: 2s;
+animation-direction: alternate;    
+}
+
+h2{
+margin: 0 auto;
+}
+
+div.date{
+margin: 0 auto;
+    width: 50%;
+}
+
+p{
+margin:0 auto;
+padding: 1%;
+width:80%;
+}
+
+section{
+margin: 5% 0 0 0;
+}
+
+img{
+margin:0 auto;
+}
+
+#label-pic{
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    max-width: 320px;
+    position: relative;
+    left: 50%;
+    
+}
+
+.picturepadding{
+    padding:10%;
+}
+
+form{
+margin: 0 0 0 0;
+max-width: 800px;
+}
+
+.form_settings input, .form_settings textarea
+{ padding: 2px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #BBB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings input[type="checkbox"]
+{ padding: 2px 0; 
+  width: 15px; 
+  font: 100% arial; 
+  border: 0; 
+  background: #FFF; 
+  color: #47433F;
+  margin: 28px 0;}
+
+
+@media only screen and (max-width: 500px) {
+    #menu{
+        display: block;
+    }
+    
+    #label-pic {
+        left: 0%;
+    }
+}

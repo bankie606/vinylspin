@@ -32,6 +32,7 @@ if(mysqli_num_rows($result) > 0)
         $Frontside=($row['FrontSide']);
         $Backside=($row['BackSide']);
         $title = "Title Page for " . $Title;
+        $Price = ($row['Price']);
         $pageID = $Artist;
 //        $Labelsimp = strstr("$Label ", ", ", true);
         $Feedback = '';//no feedback necessary
@@ -63,11 +64,23 @@ if($Feedback == '')
     echo 'Title: <b>' . $Title . '</b><br> ';
     echo 'Label: <b>' . $Label . '</b><br> ';
     echo '<img id="label-pic" src="uploads/' . str_replace(" ", "", strtolower($Label)) . '.jpg" />';
+    echo 'Price: <b>$' . money_format ('%(#10n', $Price) . '</b><br> ';
+    
+    
+    
     
 include 'recordimage.php';
+
+include 'paypalbutton.php';   
+    
+include 'addtocart.php';    
+    
+include 'recordproducts.php';
+    
 }else{//warn user no data
     echo $Feedback;
 }    
+
 
 echo '<p><a href="javascript:history.go(-1)">Go Back</a></p>';
 

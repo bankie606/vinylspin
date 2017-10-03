@@ -272,7 +272,7 @@ class Pager
 
 
 # Create instance of new 'pager' class
-$myPager = new Pager(15,'',$prev,$next,'');
+$myPager = new Pager(25,'',$prev,$next,'');
 $sql = $myPager->loadSQL($sql,$iConn);  #load SQL, pass in existing connection, add offset
 $result = mysqli_query($iConn,$sql) or die(myerror(__FILE__,__LINE__,mysqli_error($iConn)));
 

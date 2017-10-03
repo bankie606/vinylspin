@@ -3,7 +3,7 @@
  
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="http://frcrescioni.net/js/lib/turn.js"></script>            
+<script src="https://frcrescioni.net/js/lib/turn.js"></script>            
 <link rel=stylesheet href="/css/flipstyle.css"/>
 </head>
 
